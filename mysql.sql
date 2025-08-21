@@ -70,3 +70,15 @@ SELECT s.student_name, lg.grade_obtained
 FROM linux_grades lg
 JOIN students s ON s.student_id = lg.student_id
 WHERE lg.grade_obtained < 50;
+
+-- Getting the Students who took only one course, with their student ids
+SELECT s.student_id, s.student_name
+FROM students s
+WHERE s.student_id IN (
+    SELECT student_id FROM linux_grades
+    WHERE student_id NOT IN (SELECT student_id FROM python_grades)
+    UNION
+    SELECT student_id FROM python_grades
+    WHERE student_id NOT IN (SELECT student_id FROM linux_grades)
+);
+
