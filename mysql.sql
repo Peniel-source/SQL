@@ -89,4 +89,11 @@ WHERE s.student_id IN (
     FROM linux_grades lg
     INNER JOIN python_grades pg ON lg.student_id = pg.student_id
 );
-
+-- Calculating the average grade for each course
+SELECT course_name, AVG(grade_obtained) AS avg_grade
+FROM python_grades
+GROUP BY course_name
+UNION ALL
+SELECT course_name, AVG(grade_obtained) AS avg_grade
+FROM linux_grades
+GROUP BY course_name;
