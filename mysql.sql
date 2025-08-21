@@ -81,4 +81,12 @@ WHERE s.student_id IN (
     SELECT student_id FROM python_grades
     WHERE student_id NOT IN (SELECT student_id FROM linux_grades)
 );
+-- Students who took both courses
+SELECT s.student_id, s.student_name
+FROM students s
+WHERE s.student_id IN (
+    SELECT lg.student_id
+    FROM linux_grades lg
+    INNER JOIN python_grades pg ON lg.student_id = pg.student_id
+);
 
