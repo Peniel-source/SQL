@@ -1,10 +1,10 @@
- Creating students table to put students details
+-- Creating students table to put students details
 CREATE TABLE students (
     student_id INT PRIMARY KEY,
     student_name VARCHAR(100),
     intake_year INT
 );
-Create linux_grades table to put student details for the linux course
+-- Create linux_grades table to put student details for the linux course
 CREATE TABLE linux_grades (
     course_id INT,
     course_name VARCHAR(100),
