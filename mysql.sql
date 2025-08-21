@@ -39,3 +39,18 @@ INSERT INTO students (student_id, student_name, intake_year) VALUES
 (13, 'Alice Agens', J2022),
 (14, 'Tom Jerry', M2021),
 (15, 'Diane Azam', S2023);
+-- Sample data is inserted into grades table
+INSERT INTO linux_grades VALUES
+(101, 'Bash Scripting', 1, 78.5),
+(101, 'Bash Scripting', 2, 45.0),
+(101, 'Bash Scripting', 3, 88.0),
+(101, 'Bash Scripting', 4, 52.5),
+(101, 'Bash Scripting', 5, 39.0),
+(101, 'Bash Scripting', 6, 60.0),
+(102, 'Linux Fundamentals', 7, 91.0),
+(102, 'Linux Fundamentals', 8, 47.5),
+(102, 'Linux Fundamentals', 9, 55.0),
+(102, 'Linux Fundamentals', 10, 62.0),
+(102, 'Linux Fundamentals', 11, 49.0),
+(102, 'Linux Fundamentals', 12, 73.0);
+
