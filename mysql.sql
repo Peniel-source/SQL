@@ -53,4 +53,15 @@ INSERT INTO linux_grades VALUES
 (102, 'Linux Fundamentals', 10, 62.0),
 (102, 'Linux Fundamentals', 11, 49.0),
 (102, 'Linux Fundamentals', 12, 73.0);
-
+-- Inserting data into python grades table
+INSERT INTO python_grades VALUES
+(201, 'Python Basics', 3, 92.0),
+(201, 'Python Basics', 4, 65.0),
+(201, 'Python Basics', 6, 70.0),
+(202, 'Python Programming', 7, 85.0),
+(202, 'Python Programming', 9, 58.0),
+(202, 'Python Programming', 10, 77.0),
+(202, 'Python Programming', 12, 80.0),
+(203, 'Python Programming and Database', 13, 90.0),
+(203, 'Python Programming and Database', 14, 66.0),
+(203, 'Python Programming and Database', 15, 74.0);
