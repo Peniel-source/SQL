@@ -97,3 +97,14 @@ UNION ALL
 SELECT course_name, AVG(grade_obtained) AS avg_grade
 FROM linux_grades
 GROUP BY course_name;
+-- Student with the highest average across both courses
+SELECT s.student_id, s.student_name, AVG(g.grade_obtained) AS avg_score
+FROM (
+    SELECT student_id, grade_obtained FROM linux_grades
+    UNION ALL
+    SELECT student_id, grade_obtained FROM python_grades
+) g
+JOIN students s ON s.student_id = g.student_id
+GROUP BY s.student_id, s.student_name
+ORDER BY avg_score DESC
+LIMIT 1;
