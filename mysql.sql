@@ -24,21 +24,21 @@ CREATE TABLE python_grades (
 );
  -- 15 students data being inserted into students table
 INSERT INTO students (student_id, student_name, intake_year) VALUES
-(1, 'Umutoni Kenia', J2022),
-(2, 'Natinael Borana', M2021),
-(3, 'Esther Kirabo', S2023),
-(4, 'Obeng Peniel', J2022),
-(5, 'Ahmed Daib', M2021),
-(6, 'David Uwase', S2023),
-(7, 'Mbabazi Ange', J2022),
-(8, 'Kevin Lapawa', M2021),
-(9, 'Ingabire Marie', S2023),
-(10, 'Samuel Abban', J2022),
-(11, 'Nadine Ishimwe', M2021),
-(12, 'Brian Gattete', S2023),
-(13, 'Alice Agens', J2022),
-(14, 'Tom Jerry', M2021),
-(15, 'Diane Azam', S2023);
+(1, 'Umutoni Kenia', 'J2022'),
+(2, 'Natinael Borana', 'M2021'),
+(3, 'Esther Kirabo', 'S2023'),
+(4, 'Obeng Peniel', 'J2022'),
+(5, 'Ahmed Daib', 'M2021'),
+(6, 'David Uwase', 'S2023'),
+(7, 'Mbabazi Ange', 'J2022'),
+(8, 'Kevin Lapawa', 'M2021'),
+(9, 'Ingabire Marie', 'S2023'),
+(10, 'Samuel Abban', 'J2022'),
+(11, 'Nadine Ishimwe', 'M2021'),
+(12, 'Brian Gattete', 'S2023'),
+(13, 'Alice Agens', 'J2022'),
+(14, 'Tom Jerry', 'M2021'),
+(15, 'Diane Azam', 'S2023');
 -- Sample data is inserted into grades table
 INSERT INTO linux_grades VALUES
 (101, 'Bash Scripting', 1, 78.5),
